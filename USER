@@ -1,0 +1,13 @@
+create database study_db default character set utf8;
+show databases;
+
+use study_db;
+
+create user 'sidhd8203'@'localhost' IDENTIFIED BY 'study';
+
+GRANT ALL privileges ON *.* TO 'sidhd8203'@'localhost';
+
+flush privileges;
+
+show grants for 'sidhd8203'@'localhost';
+
